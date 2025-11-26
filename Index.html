@@ -1,0 +1,181 @@
+<html lang="sq">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>28-29 Nëntori — Përkujtim & Mësim</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="topbar">
+      <h1>28 - 29 Nëntori</h1>
+      <div class="auth-area" id="authArea">
+        <button id="openLogin">Hyr</button>
+        <button id="openSignup">Regjistrohu</button>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-images">
+        <figure><img id="img-sk" src="https://storia.dh.unica.it/risorse/files/large/ed4fc89bae1de3440036c11740339913a5fb03bd.jpg" alt="Skënderbeu"><figcaption>Gjergj Kastrioti - Skënderbeu</figcaption></figure>
+        <figure><img id="img-iq" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Ismail_Qemali_%28portrait%29.jpg" alt="Ismail Qemali"><figcaption>Ismail Qemali</figcaption></figure>
+        <figure><img id="img-ib" src="https://i0.wp.com/mitrovicaguide.com/wp-content/uploads/2014/03/The_new_Isa_Boletini-2.jpg?fit=357%2C400&ssl=1" alt="Isa Boletini"><figcaption>Isa Boletini</figcaption></figure>
+        <figure><img id="img-qs" src="https://sot.com.al/wp-content/uploads/2024/05/66350ab967a36.jpg"="Qemal Stafa"><figcaption>Qemal Stafa</figcaption></figure>
+      </div>
+
+      <p class="subtitle">Informacione, filma, aktivitete mësimore dhe kuize për 28 & 29 Nëntorin.</p>
+
+   
+      <!-- anthem (public Wikimedia files used) -->
+      <audio id="anthemAudio" preload="none" crossorigin="anonymous"
+             src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Hymni_i_Flamurit_instrumental.ogg"></audio>
+      <!-- NOTE: If your browser blocks autoplay, press the button to allow play. -->
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <button data-page="home" class="nav-btn active">Faqja Kryesore</button>
+      <button data-page="videos" class="nav-btn">Filma & Dokumentarë</button>
+      <button data-page="teachers" class="nav-btn">Mësuesit</button>
+      <button data-page="quiz" class="nav-btn">Loja (Kuizi)</button>
+      <button data-page="profile" class="nav-btn">Profili</button>
+    </nav>
+  </header>
+
+  <main id="app" class="container">
+    <!-- HOME -->
+    <section data-page="home" class="page active">
+      <h2>Mirësevini</h2>
+      <p>Kjo faqe është një burim informues dhe edukues për datat historike të 28 & 29 Nëntorit — me artikuj të shkurtër, filma/dokumentarë, mësime për mësues dhe kuize me nivele.</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>28 Nëntori — Pavarësia</h3>
+          <p>Më 28 Nëntor 1912, Ismail Qemali shpalli pavarësinë e Shqipërisë në Vlorë. Kjo faqe ofron burime dhe materiale për të mësuar rreth ngjarjeve dhe figurave.</p>
+        </article>
+
+        <article class="card">
+          <h3>29 Nëntori — Përkujtim</h3>
+          <p>29 Nëntori lidhet me përkujtime të ngjarjeve historike dhe kremtime shtetërore — përdorni seksionin "Filma & Dokumentarë" dhe "Mësuesit" për lëndë mësimore.</p>
+        </article>
+
+        <article class="card">
+          <h3>Interaktivitet</h3>
+          <p>Përdorni kuizin dhe fitoni medalje në profilin tuaj — gjithashtu mësuesit mund të krijojnë aktivitete të lehta për nxënësit.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- VIDEOS -->
+    <section data-page="videos" class="page">
+      <h2>Filma & Dokumentarë</h2>
+      <p>Më poshtë janë disa dokumentarë të publikuar në YouTube që trajtojnë shpalljen e pavarësisë, Skënderbeun dhe ngjarje të tjera historike.</p>
+
+      <div class="videos-grid">
+        <div class="video-card">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/sUDbXSTj8qI" title="1912 - Historia e Shpalljes" allowfullscreen></iframe>
+          <p><strong>1912 - Historia e Shpalljes së Pavarësisë</strong></p>
+        </div>
+
+        <div class="video-card">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/7sdhk5DLJcU" title="Themelet e Pavarësisë" allowfullscreen></iframe>
+          <p><strong>Themelet e Pavarësisë (dokumentar)</strong></p>
+        </div>
+
+        <div class="video-card">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DhxioDL1fzg" title="Skanderbeg documentary" allowfullscreen></iframe>
+          <p><strong>Skanderbeg — Dokumentar (pjesa 1)</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEACHERS -->
+    <section data-page="teachers" class="page">
+      <h2>Materiale & Mjetet për Mësuesit</h2>
+      <p>Këtu gjeni plane mësimi të gatshme, ide aktivitetesh dhe një **Editor Timeline** (aktiv dhe i ruajtshëm) që mund ta përdorni për të ndërtuar rrjedhën e një ore mësimore.</p>
+
+      <div class="teacher-layout">
+        <div class="lesson-plans card">
+          <h3>Planet e Gatshme</h3>
+          <ul>
+            <li><strong>Plan 1:</strong> Historia e shpalljes së pavarësisë (diskutim + prezantime nxënësish)</li>
+            <li><strong>Plan 2:</strong> Figuratat kombëtare: prezantim & poster</li>
+            <li><strong>Plan 3:</strong> Luaj rolet — rikrijim i seancës së shpalljes</li>
+          </ul>
+          <button id="downloadPlan">Shkarko planin (PDF)</button>
+        </div>
+
+        <div class="timeline card">
+          <h3>Editor Timeline (shtoni ngjarje)</h3>
+          <div id="timelineList"></div>
+          <input id="timelineInput" placeholder="Përshkrimi i shkurtër i ngjarjes" />
+          <input id="timelineDate" type="date" />
+          <button id="addTimeline">Shto</button>
+          <button id="saveTimeline">Ruaj Timeline</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section data-page="quiz" class="page">
+      <h2>Kuizi Patriotik</h2>
+      <p>Zgjidh nivelin dhe fillo. Çdo nivel ka 10 pyetje. Rezultatet ruhen në profil (nëse jeni në sistem).</p>
+
+      <div class="quiz-setup">
+        <label>Zgjidh nivelin:
+          <select id="levelSelect">
+            <option value="easy">Lehtë</option>
+            <option value="medium">Mesatare</option>
+            <option value="hard">Ekstreme</option>
+          </select>
+        </label>
+        <button id="startQuiz">Fillo Kuizin</button>
+      </div>
+
+      <div id="quizArea" class="quiz-area hidden">
+        <div id="qProgress" class="q-progress"></div>
+        <div id="questionCard" class="question-card"></div>
+        <div id="answers" class="answers"></div>
+        <div id="feedback" class="feedback"></div>
+        <div class="quiz-controls">
+          <button id="nextBtn" class="hidden">Vazhdo</button>
+          <button id="finishBtn" class="hidden">Përfundo</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section data-page="profile" class="page">
+      <h2>Profili Juaj</h2>
+      <div id="profileArea">
+        <p>Nuk jeni i identifikuar. Hyni ose regjistrohuni për të ruajtur progresin dhe për të fituar medalje.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Chatbot (bottom-right) -->
+  <div id="chatbot" class="chatbot">
+    <div class="cb-header">
+      <strong>Biseduesi — 28/29 Nëntor</strong>
+      <button id="cbClose" title="Mbyll">✕</button>
+    </div>
+    <div id="cbMessages" class="cb-messages"></div>
+    <div class="cb-input">
+      <input id="cbInput" placeholder="Shkruaj pyetjen (p.sh. 'Kush ishte Skënderbeu?')" />
+      <button id="cbSend">Dërgo</button>
+    </div>
+  </div>
+  <button id="openChat" class="open-chat">💬</button>
+
+  <!-- Modal for auth -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-inner">
+      <button id="modalClose" class="modal-close">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

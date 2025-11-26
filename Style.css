@@ -1,0 +1,81 @@
+:root{
+  --red:#c1121f;
+  --black:#0a0a0a;
+  --glass: rgba(255,255,255,0.04);
+  --muted: rgba(255,255,255,0.7);
+  --card-bg: rgba(255,255,255,0.03);
+}
+
+*{box-sizing:border-box;font-family:Inter, system-ui, Arial, sans-serif}
+html,body{height:100%;margin:0;background:linear-gradient(160deg, var(--red) 0%, var(--black) 60%);color:#fff}
+.container{max-width:1200px;margin:28px auto;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 12px 40px rgba(0,0,0,0.5)}
+
+/* Header */
+.site-header{padding:18px 12px}
+.topbar{display:flex;justify-content:space-between;align-items:center}
+.topbar h1{margin:0;font-size:28px;letter-spacing:0.6px}
+.auth-area button{margin-left:8px;padding:8px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.08);background:transparent;color:#fff;cursor:pointer}
+
+/* Hero */
+.hero{margin-top:12px;text-align:center;padding-bottom:12px}
+.hero-images{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.hero-images figure{width:180px;text-align:center;margin:0}
+.hero-images img{width:180px;height:210px;object-fit:cover;border-radius:8px;border:3px solid rgba(255,255,255,0.08)}
+.hero .subtitle{margin-top:12px;color:var(--muted)}
+.speaker-btn{position:fixed;top:18px;right:18px;padding:10px 12px;border-radius:8px;border:none;background:rgba(0,0,0,0.6);color:#fff;cursor:pointer;z-index:30}
+
+/* Nav */
+.main-nav{display:flex;gap:10px;justify-content:center;margin-top:18px}
+.nav-btn{padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.05);background:var(--card-bg);cursor:pointer;color:#fff}
+.nav-btn.active{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+
+/* Cards & layout */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.card{background:var(--card-bg);padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+
+/* Videos */
+.videos-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:12px}
+.video-card iframe{width:100%;height:260px;border-radius:8px;border:0}
+.video-card p{margin:8px 0 0;color:var(--muted)}
+
+/* Teachers */
+.teacher-layout{display:flex;gap:12px;margin-top:12px}
+.lesson-plans{flex:0 0 40%}
+.timeline{flex:1}
+
+/* Quiz */
+.quiz-setup{display:flex;align-items:center;gap:12px;margin-top:12px}
+.quiz-area{margin-top:14px;background:var(--card-bg);padding:14px;border-radius:10px}
+.q-progress{color:var(--muted);margin-bottom:8px}
+.question-card{font-weight:600}
+.answers{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.answers button{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff;text-align:left;cursor:pointer}
+.feedback{margin-top:12px;min-height:28px}
+.quiz-controls{margin-top:10px;display:flex;gap:8px}
+
+/* Profile */
+.page{display:none}
+.page.active{display:block}
+
+/* Chatbot */
+.open-chat{position:fixed;right:18px;bottom:18px;background:var(--red);border:0;padding:12px;border-radius:50%;font-size:20px;z-index:998;color:#fff;cursor:pointer}
+.chatbot{position:fixed;right:18px;bottom:18px;width:340px;background:#0b0b0b;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,0.6);display:flex;flex-direction:column;overflow:hidden;z-index:999;display:none}
+.cb-header{padding:10px;background:rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center}
+.cb-messages{height:260px;overflow:auto;padding:10px}
+.cb-input{display:flex;padding:8px;border-top:1px solid rgba(255,255,255,0.04)}
+.cb-input input{flex:1;padding:8px;border-radius:6px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff}
+.cb-input button{margin-left:8px;padding:8px;border-radius:6px;border:0;background:var(--red);color:#fff}
+
+/* Modal */
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);z-index:1000}
+.modal.hidden{display:none}
+.modal-inner{background:#0b0b0b;padding:18px;border-radius:10px;color:#fff;min-width:320px}
+.modal-close{position:absolute;right:14px;top:12px;background:transparent;border:0;color:#fff}
+
+/* Responsive */
+@media (max-width:900px){
+  .cards{grid-template-columns:1fr}
+  .videos-grid{grid-template-columns:1fr}
+  .hero-images img{width:140px;height:160px}
+  .teacher-layout{flex-direction:column}
+}
